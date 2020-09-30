@@ -10,10 +10,12 @@
 <td>${tarefa.id }</td>
 <td>${tarefa.descricao}</td>
 <td><form action="deletaTarefa" method="post">
+<input type="hidden" name='id' value='${tarefa.id}'>
 <button type='submit' class="btn btn-secondary btn-sm"> Del </button> 
 </form></td>
 </tr>
 </c:forEach>
 </table>
+<a href="criaTarefa"> Criar tarefa</a>
 </body>
 </html>

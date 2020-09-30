@@ -26,7 +26,7 @@ public class TarefasController {
 	public String adiciona(Tarefa tarefa) {
 		TarefasDAO dao = new TarefasDAO();
 		dao.adicionaDescricao(tarefa);
-		return "adicionada";
+		return "redirect:/";
 	}
 	@RequestMapping("deletaTarefa")
 	public String deleta(Tarefa tarefa) {
